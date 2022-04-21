@@ -5,11 +5,10 @@
 }
 
 /* Base */
-
 * {
   margin: 0;
   font-family: "Quicksand";  
-  background-color: rgb(23, 23, 23);
+  background-color: #191a19;
   color: var(--textcolor);
 }
 
@@ -34,4 +33,65 @@
 }
 .navbar a:hover {
   color: rgb(115, 115, 115);
+}
+
+.content{
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* home styles*/
+.home{
+  position: absolute;
+}
+.home a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  cursor: pointer;
+}
+.home a:hover {
+  color: rgb(115, 115, 115);
+}
+.home li{
+  margin-top: 20px;
+}
+
+/* form */
+/* create new blog form */
+.sphere {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sphere label {
+  text-align: left;
+  display: block;
+}
+.sphere h2 {
+  font-size: 20px;
+  color: Green;
+  margin-bottom: 30px;
+}
+.sphere input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.sphere button {
+  background: Green;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empty-message{
+  margin-top: 30px;
+  padding: 1px;
 }

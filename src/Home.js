@@ -1,12 +1,17 @@
+import { Link } from 'react-router-dom'; 
+
 const Home = () => {
-    return (
-        <div className="home">
-            <div className="grid-container">
-                <div className="left">test</div>
-                <div className="middle">test</div>
-                <div className="right">test</div>
-            </div>
-        </div>
+  return (
+      <div className="home">
+          <ul>
+            <li><Link to='/sphere'>Sphere</Link></li>
+            <li><Link to='/sphere'>Cylinder</Link></li>
+            <li><Link to='/sphere'>Cone</Link></li>
+            <li><Link to='/sphere'>Rectangular Prism</Link></li>
+            <li><Link to='/sphere'>Triangular Prism</Link></li>
+          </ul>
+          
+      </div>
     );
 }
  
