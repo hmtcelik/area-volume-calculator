@@ -6,6 +6,7 @@ import './index.css';
 import Home from './Home';
 import Navbar from './Navbar';
 import Sphere from './Sphere';
+import Cylinder from './Cylinder';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/sphere' element={<Sphere/>}/>
+          <Route exact path='/cylinder' element={<Cylinder/>}/>          
         </Routes>
       </div>
     </div>

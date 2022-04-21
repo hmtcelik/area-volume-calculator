@@ -60,21 +60,21 @@
 
 /* form */
 /* create new blog form */
-.sphere {
+.objects {
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }
-.sphere label {
+.objects label {
   text-align: left;
   display: block;
 }
-.sphere h2 {
+.objects h2 {
   font-size: 20px;
   color: Green;
   margin-bottom: 30px;
 }
-.sphere input, .create textarea, .create select {
+.objects input, .create textarea, .create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
@@ -82,7 +82,7 @@
   box-sizing: border-box;
   display: block;
 }
-.sphere button {
+.objects button {
   background: Green;
   color: #fff;
   border: 0;

@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-const Sphere = () => {
+const Cylinder = () => {
     const [r, setR] = useState(null);
     const [pi, setPi] = useState(3.14);
+    const [h, setH] = useState(null);
+
     
     const [area, setArea] = useState(0);
     const [volume, setVolume] = useState(0);
@@ -16,15 +18,16 @@ const Sphere = () => {
         setShowResults(true);
         setShowForm(false);
 
-        const calcArea = 4 * pi * r * r;
+        const calcArea = 2*pi*r*r + 2*pi*r*h;
         setArea(calcArea.toFixed(2));
     
-        const calcVolume = 4/3 * pi * r * r * r;
+        const calcVolume = h * pi * r * r;
         setVolume(calcVolume.toFixed(2));
     }
 
     const displayForm = () =>{
         setR(null);
+        setH(null);
         setPi(3.14);
         setShowResults(false);
         setShowForm(true);
@@ -34,6 +37,7 @@ const Sphere = () => {
         <div className="objects">
             { showForm &&  <form onSubmit={handleSubmit}>
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
+              <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
               <button type="submit">Submit</button> {'\u00A0'}
             </form>}
@@ -51,4 +55,4 @@ const Sphere = () => {
     );
 }
  
-export default Sphere;
+export default Cylinder;
