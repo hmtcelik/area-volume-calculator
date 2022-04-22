@@ -1,4 +1,6 @@
 import { useState } from "react";
+import close from './img/close.svg';
+import { Link } from "react-router-dom";
 
 const Cylinder = () => {
     const [r, setR] = useState(null);
@@ -35,6 +37,10 @@ const Cylinder = () => {
 
     return (         
         <div className="objects">
+            <div>
+                <Link to={'/'}><img src={close} alt="close" className="close"/></Link>
+                <br></br>
+            </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />

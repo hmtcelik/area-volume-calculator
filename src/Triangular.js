@@ -1,4 +1,6 @@
 import { useState } from "react";
+import close from './img/close.svg';
+import { Link } from "react-router-dom";
 
 const Triangular = () => {
     const [l, setL] = useState(null);
@@ -35,6 +37,10 @@ const Triangular = () => {
     }
     return (  
         <div className="objects">
+            <div>
+                <Link to={'/'}><img src={close} alt="close" className="close"/></Link>
+                <br></br>
+            </div>            
         { showForm &&  <form onSubmit={handleSubmit}>
           <label>Length:</label><input type="text" required value={l} onChange={(e) => setL(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
           <label>B:</label><input type="text" required value={b} onChange={(e) => setB(e.target.value)} />
