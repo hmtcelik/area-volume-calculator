@@ -37,7 +37,7 @@ const Sphere = () => {
     return (
         <div className="objects">
             <div>
-                <Link to={'/'}><img src={close} alt="close" className="close"/></Link>
+                <Link to={'/area-volume-calculator'}><img src={close} alt="close" className="close"/></Link>
                 <br></br>
             </div>
             { showForm &&  <form onSubmit={handleSubmit}>

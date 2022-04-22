@@ -10,6 +10,7 @@ import Cylinder from './Cylinder';
 import Cone from './Cone';
 import Rectangular from './Rectangular';
 import Triangular from './Triangular';
+import PageNotFound from './PageNotFound';
 
 
 function App() {
@@ -19,12 +20,13 @@ function App() {
       <Navbar />
       <div className='content'>
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route exact path='/area-volume-calculator' element={<Home />} />
           <Route exact path='/sphere' element={<Sphere/>}/>
           <Route exact path='/cylinder' element={<Cylinder/>}/>
           <Route exact path='/cone' element={<Cone/>}/>
           <Route exact path='/rectangular' element={<Rectangular/>}/>
-          <Route exact path='/triangular' element={<Triangular/>}/>           
+          <Route exact path='/triangular' element={<Triangular/>}/>
+          <Route path='*' element={<PageNotFound/>}/>
         </Routes>
       </div>
     </div>
