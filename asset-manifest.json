@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/area-volume-calculator/static/css/main.d223dcb1.css",
+    "main.js": "/area-volume-calculator/static/js/main.2ce014ee.js",
+    "static/media/cone-r.png": "/area-volume-calculator/static/media/cone-r.2a70218845a0674c0938.png",
+    "static/media/triangular-r.png": "/area-volume-calculator/static/media/triangular-r.3a679cfe377821fed8fe.png",
+    "static/media/soda.png": "/area-volume-calculator/static/media/soda.1dc1a507a4cf2cca86dc.png",
+    "static/media/book.png": "/area-volume-calculator/static/media/book.0730f9002d9f5110c2ad.png",
+    "static/media/cylinder-r.png": "/area-volume-calculator/static/media/cylinder-r.cad99c119306de4a18f6.png",
+    "static/media/rectangular-r.png": "/area-volume-calculator/static/media/rectangular-r.130622b6dbbf7a8ff29d.png",
+    "static/media/sphere-r.png": "/area-volume-calculator/static/media/sphere-r.a2e8748dde018be7af60.png",
+    "static/media/cone.png": "/area-volume-calculator/static/media/cone.24d4060c45f254b8dd88.png",
+    "static/media/cheese.png": "/area-volume-calculator/static/media/cheese.aaff4d4554f6c8e37860.png",
+    "static/media/pokeball.png": "/area-volume-calculator/static/media/pokeball.1081e42fb84ad83da29c.png",
+    "index.html": "/area-volume-calculator/index.html",
+    "static/media/close.svg": "/area-volume-calculator/static/media/close.05a43c7358a51cff8055c87c9c94c143.svg",
+    "main.d223dcb1.css.map": "/area-volume-calculator/static/css/main.d223dcb1.css.map",
+    "main.2ce014ee.js.map": "/area-volume-calculator/static/js/main.2ce014ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d223dcb1.css",
+    "static/js/main.2ce014ee.js"
+  ]
+}
