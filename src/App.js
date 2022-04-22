@@ -8,6 +8,8 @@ import Navbar from './Navbar';
 import Sphere from './Sphere';
 import Cylinder from './Cylinder';
 import Cone from './Cone';
+import Rectangular from './Rectangular';
+import Triangular from './Triangular';
 
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/sphere' element={<Sphere/>}/>
           <Route exact path='/cylinder' element={<Cylinder/>}/>
-          <Route exact path='/cone' element={<Cone/>}/>           
+          <Route exact path='/cone' element={<Cone/>}/>
+          <Route exact path='/reactangular' element={<Rectangular/>}/>
+          <Route exact path='/triangular' element={<Triangular/>}/>           
         </Routes>
       </div>
     </div>
