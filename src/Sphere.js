@@ -1,6 +1,8 @@
 import { useState } from "react";
-import close from './img/close.svg';
 import { Link } from "react-router-dom";
+
+import close from './img/close.svg';
+import sphere from './img/sphere-r.png';
 
 const Sphere = () => {
     const [r, setR] = useState(null);
@@ -39,6 +41,7 @@ const Sphere = () => {
                 <br></br>
             </div>
             { showForm &&  <form onSubmit={handleSubmit}>
+                <img width={250} className="shapeimg" src={sphere} alt="sphere" />
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
               <button type="submit">Submit</button> {'\u00A0'}
@@ -47,8 +50,8 @@ const Sphere = () => {
             <div className="results">
                 <h3>Results</h3>
                 <br></br>
-                <p>Area : {area}</p>
-                <p>Volume : {volume}</p>
+                <p>Area: {area}</p>
+                <p>Volume: {volume}</p>
                 <br></br>
                 <button style={{background:"gray"}} onClick={displayForm}>Calculate Again</button>
             </div>}

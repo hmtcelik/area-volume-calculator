@@ -1,6 +1,8 @@
 import { useState } from "react";
-import close from './img/close.svg';
 import { Link } from "react-router-dom";
+
+import close from './img/close.svg';
+import cone from './img/cone-r.png';
 
 const Cone = () => {
     const [r, setR] = useState(null);
@@ -43,9 +45,10 @@ const Cone = () => {
                 <br></br>
             </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
+              <img width={300} className="shapeimg" src={cone} alt="sphere" />
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
-              <label>side:</label><input type="text" required value={s} onChange={(e) => setS(e.target.value)} />
+              <label>slant height:</label><input type="text" required value={s} onChange={(e) => setS(e.target.value)} />
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
               <button type="submit">Submit</button> {'\u00A0'}
             </form>}
@@ -53,8 +56,8 @@ const Cone = () => {
             <div className="results">
                 <h3>Results</h3>
                 <br></br>
-                <p>Area : {area}</p>
-                <p>Volume : {volume}</p>
+                <p>Area: {area}</p>
+                <p>Volume: {volume}</p>
                 <br></br>
                 <button style={{background:"gray"}} onClick={displayForm}>Calculate Again</button>
             </div>}

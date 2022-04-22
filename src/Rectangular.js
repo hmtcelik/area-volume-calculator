@@ -1,6 +1,8 @@
 import { useState } from "react";
-import close from './img/close.svg';
 import { Link } from "react-router-dom";
+
+import close from './img/close.svg';
+import rectangular from './img/rectangular-r.png';
 
 const Rectangular = () => {
     const [l, setL] = useState(null);
@@ -41,17 +43,18 @@ const Rectangular = () => {
                 <br></br>
             </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
-              <label>Length:</label><input type="text" required value={l} onChange={(e) => setL(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
-              <label>Width:</label><input type="text" required value={w} onChange={(e) => setW(e.target.value)} />
-              <label>Height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
+            <img width={350} className="shapeimg" src={rectangular} alt="sphere" />
+              <label>length:</label><input type="text" required value={l} onChange={(e) => setL(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
+              <label>width:</label><input type="text" required value={w} onChange={(e) => setW(e.target.value)} />
+              <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
               <button type="submit">Submit</button> {'\u00A0'}
             </form>}
             {showResults && 
             <div className="results">
                 <h3>Results</h3>
                 <br></br>
-                <p>Area : {area}</p>
-                <p>Volume : {volume}</p>
+                <p>Area: {area}</p>
+                <p>Volume: {volume}</p>
                 <br></br>
                 <button style={{background:"gray"}} onClick={displayForm}>Calculate Again</button>
             </div>}

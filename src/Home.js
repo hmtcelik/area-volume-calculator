@@ -55,7 +55,7 @@ const Home = () => {
               </div>
             </div>
           </Link>
-          <Link to='/sphere'>
+          <Link to='/triangular'>
           <div className='tiran'>
             <div class="card 1">
                 <div class="card_image">
