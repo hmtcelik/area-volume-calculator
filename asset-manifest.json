@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/area-volume-calculator/static/css/main.d223dcb1.css",
-    "main.js": "/area-volume-calculator/static/js/main.bfafbf12.js",
+    "main.js": "/area-volume-calculator/static/js/main.e3555be5.js",
     "static/media/cone-r.png": "/area-volume-calculator/static/media/cone-r.2a70218845a0674c0938.png",
     "static/media/triangular-r.png": "/area-volume-calculator/static/media/triangular-r.3a679cfe377821fed8fe.png",
     "static/media/soda.png": "/area-volume-calculator/static/media/soda.1dc1a507a4cf2cca86dc.png",
@@ -15,10 +15,10 @@
     "index.html": "/area-volume-calculator/index.html",
     "static/media/close.svg": "/area-volume-calculator/static/media/close.05a43c7358a51cff8055c87c9c94c143.svg",
     "main.d223dcb1.css.map": "/area-volume-calculator/static/css/main.d223dcb1.css.map",
-    "main.bfafbf12.js.map": "/area-volume-calculator/static/js/main.bfafbf12.js.map"
+    "main.e3555be5.js.map": "/area-volume-calculator/static/js/main.e3555be5.js.map"
   },
   "entrypoints": [
     "static/css/main.d223dcb1.css",
-    "static/js/main.bfafbf12.js"
+    "static/js/main.e3555be5.js"
   ]
 }
