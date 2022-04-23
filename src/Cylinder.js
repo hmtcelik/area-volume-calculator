@@ -37,6 +37,17 @@ const Cylinder = () => {
         setShowForm(true);
     }
 
+/*  
+    const Isnull = () =>{
+        if(r === null)
+            return false;
+        if(h === null)
+            return false;            
+        else
+            return true;
+    }
+*/
+    
     return (         
         <div className="objects">
             <div>
@@ -45,10 +56,12 @@ const Cylinder = () => {
             </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
             <img width={350} className="shapeimg" src={cylinder} alt="sphere" />
+            <br /><br />
+                <p>Area = &nbsp; {parseFloat((2*pi*r*r + 2*pi*r*h).toFixed(2))}</p>
+                <p>Volume = &nbsp;{parseFloat(( h * pi * r * r).toFixed(2))}</p>
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
-              <button type="submit">Submit</button> {'\u00A0'}
             </form>}
             {showResults && 
             <div className="results">

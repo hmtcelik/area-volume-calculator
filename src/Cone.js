@@ -46,11 +46,13 @@ const Cone = () => {
             </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
               <img width={300} className="shapeimg" src={cone} alt="sphere" />
+              <br /><br />
+                <p>Area = &nbsp; {parseFloat(( pi*r*s + pi*r*r).toFixed(2))}</p>
+                <p>Volume = &nbsp;{parseFloat((1/3 * pi * r * r * h).toFixed(2))}</p>
               <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
               <label>slant height:</label><input type="text" required value={s} onChange={(e) => setS(e.target.value)} />
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
-              <button type="submit">Submit</button> {'\u00A0'}
             </form>}
             {showResults && 
             <div className="results">

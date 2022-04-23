@@ -44,10 +44,12 @@ const Rectangular = () => {
             </div>            
             { showForm &&  <form onSubmit={handleSubmit}>
             <img width={350} className="shapeimg" src={rectangular} alt="sphere" />
+            <br /><br />
+                <p>Area = &nbsp; {parseFloat(( 2*(l*w+l*h+w*h)).toFixed(2))}</p>
+                <p>Volume = &nbsp;{parseFloat((l*w*h).toFixed(2))}</p>
               <label>length:</label><input type="text" required value={l} onChange={(e) => setL(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
               <label>width:</label><input type="text" required value={w} onChange={(e) => setW(e.target.value)} />
               <label>height:</label><input type="text" required value={h} onChange={(e) => setH(e.target.value)} />
-              <button type="submit">Submit</button> {'\u00A0'}
             </form>}
             {showResults && 
             <div className="results">

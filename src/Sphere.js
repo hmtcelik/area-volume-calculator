@@ -7,7 +7,7 @@ import sphere from './img/sphere-r.png';
 const Sphere = () => {
     const [r, setR] = useState(null);
     const [pi, setPi] = useState(3.14);
-    
+  
     const [area, setArea] = useState(0);
     const [volume, setVolume] = useState(0);
 
@@ -33,6 +33,8 @@ const Sphere = () => {
         setShowResults(false);
         setShowForm(true);
     }
+    
+
 
     return (
         <div className="objects">
@@ -42,10 +44,12 @@ const Sphere = () => {
             </div>
             { showForm &&  <form onSubmit={handleSubmit}>
                 <img width={250} className="shapeimg" src={sphere} alt="sphere" />
-              <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)} /> {/*bunu yapmazsan form degismez*/}
+                <br /><br />
+                <p>Area = &nbsp; {parseFloat((4*pi*r*r).toFixed(2))}</p>
+                <p>Volume = &nbsp;{parseFloat((4/3*pi*r*r*r).toFixed(2))}</p>
+              <label>radius:</label><input type="text" required value={r} onChange={(e) => setR(e.target.value)}/> {/*bunu yapmazsan form degismez*/}
               <label>pi:</label><input type="text" required value={pi} onChange={(e) => setPi(e.target.value)} />
-              <button type="submit">Submit</button> {'\u00A0'}
-            </form>}
+             </form>}
             {showResults && 
             <div className="results">
                 <h3>Results</h3>
@@ -55,7 +59,6 @@ const Sphere = () => {
                 <br></br>
                 <button style={{background:"gray"}} onClick={displayForm}>Calculate Again</button>
             </div>}
-            
         </div>
     );
 }
